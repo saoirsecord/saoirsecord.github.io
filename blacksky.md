@@ -6,5 +6,4 @@ redirect_from:
 - /bsky
 - /at
 - /atproto
-- /ap
 ---
