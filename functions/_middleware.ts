@@ -7,14 +7,11 @@ const routes: Route[] = [
       alsoMatchWWWSubdomain: true,
     },
     to: { url: "https://mastodon.social/api/v1/accounts/lookup" },
-  },
-  {
-    from: {
-      pattern: "saoirsecord.com/api/v1/accounts/lookup?resource=acct:saoirsecord@saoirsecord.com",
-      alsoMatchWWWSubdomain: true,
-    },
-    to: { url: "https://mastodon.social/api/v1/accounts/lookup?resource=acct:saoirsecord@saoirsecord.com" },
   }
+]
+
+export const onRequestOptions: PagesFunction[] = [
+  return new Response("OK", { "status": 200 })
 ]
 
 export const onRequest: PagesFunction[] = [
