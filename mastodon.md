@@ -1,6 +1,6 @@
 ---
 permalink: /mastodon
-redirect_to: https://mastodon.social/@saoirsecord@saoirsecord.com
+redirect_to: https://justmytoots.com/@saoirsecord@saoirsecord.com
 redirect_from:
 - /activitypub
 - /fediverse
