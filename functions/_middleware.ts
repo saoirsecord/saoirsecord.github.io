@@ -1,7 +1,7 @@
 export const onRequestOptions: PagesFunction[] = [
   async (context) => {
     let url = new URL(context.request.url);
-    if (url.pathname == '/api/v1/accounts/lookup') {
+    if (url.pathname.startsWith('/api/v1/accounts')) {
       return new Response(null, { 
         "status": 200,
         "headers": {
