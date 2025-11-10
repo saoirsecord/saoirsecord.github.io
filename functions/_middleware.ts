@@ -26,7 +26,13 @@ export const onRequestGet: PagesFunction [] = [
     if (url.pathname == '/api/v1/accounts/lookup') {
       let search = decodeURIComponent(url.search);
       if (search == '?acct=@saoirsecord@saoirsecord.com') {
-        return new Response(JSON.stringify({"note":"https://justmytoots.com/@saoirsecord@saoirsecord.com","fields":[]}), { status: 200 });
+        return new Response(JSON.stringify({
+          "id": "115509614111913017",
+          "display_name": "saoirse dream Discord",
+          "url": "https://web.brid.gy/saoirsecord.com",
+          "note": "https://justmytoots.com/@saoirsecord@saoirsecord.com",
+          "fields": []
+        }), { status: 200 });
       } else {
         try {
           return await context.next();
